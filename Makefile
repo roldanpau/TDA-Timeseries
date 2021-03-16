@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rips_persistence
+# Target rules for targets named TDA-Timeseries
 
 # Build rule for target.
-rips_persistence: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rips_persistence
-.PHONY : rips_persistence
+TDA-Timeseries: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TDA-Timeseries
+.PHONY : TDA-Timeseries
 
 # fast build rule for target.
-rips_persistence/fast:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/build
-.PHONY : rips_persistence/fast
+TDA-Timeseries/fast:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/build
+.PHONY : TDA-Timeseries/fast
 
-rips_persistence.o: rips_persistence.cpp.o
+TDA-Timeseries.o: TDA-Timeseries.cpp.o
 
-.PHONY : rips_persistence.o
+.PHONY : TDA-Timeseries.o
 
 # target to build an object file
-rips_persistence.cpp.o:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/rips_persistence.cpp.o
-.PHONY : rips_persistence.cpp.o
+TDA-Timeseries.cpp.o:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/TDA-Timeseries.cpp.o
+.PHONY : TDA-Timeseries.cpp.o
 
-rips_persistence.i: rips_persistence.cpp.i
+TDA-Timeseries.i: TDA-Timeseries.cpp.i
 
-.PHONY : rips_persistence.i
+.PHONY : TDA-Timeseries.i
 
 # target to preprocess a source file
-rips_persistence.cpp.i:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/rips_persistence.cpp.i
-.PHONY : rips_persistence.cpp.i
+TDA-Timeseries.cpp.i:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/TDA-Timeseries.cpp.i
+.PHONY : TDA-Timeseries.cpp.i
 
-rips_persistence.s: rips_persistence.cpp.s
+TDA-Timeseries.s: TDA-Timeseries.cpp.s
 
-.PHONY : rips_persistence.s
+.PHONY : TDA-Timeseries.s
 
 # target to generate assembly for a file
-rips_persistence.cpp.s:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/rips_persistence.cpp.s
-.PHONY : rips_persistence.cpp.s
+TDA-Timeseries.cpp.s:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/TDA-Timeseries.cpp.s
+.PHONY : TDA-Timeseries.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rips_persistence"
-	@echo "... rips_persistence.o"
-	@echo "... rips_persistence.i"
-	@echo "... rips_persistence.s"
+	@echo "... TDA-Timeseries"
+	@echo "... TDA-Timeseries.o"
+	@echo "... TDA-Timeseries.i"
+	@echo "... TDA-Timeseries.s"
 .PHONY : help
 
 

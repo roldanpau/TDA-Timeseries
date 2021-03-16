@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rips_persistence.dir/TDA-Timeseries.cpp.o"
   "CMakeFiles/rips_persistence.dir/rips_persistence.cpp.o"
   "rips_persistence"
   "rips_persistence.pdb"

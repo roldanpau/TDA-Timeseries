@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/pau/research/TDA-Timeseries
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rips_persistence.dir/all
+all: CMakeFiles/TDA-Timeseries.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/rips_persistence.dir/clean
+clean: CMakeFiles/TDA-Timeseries.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rips_persistence.dir
+# Target rules for target CMakeFiles/TDA-Timeseries.dir
 
 # All Build rule for target.
-CMakeFiles/rips_persistence.dir/all:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/depend
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pau/research/TDA-Timeseries/CMakeFiles --progress-num=1,2 "Built target rips_persistence"
-.PHONY : CMakeFiles/rips_persistence.dir/all
+CMakeFiles/TDA-Timeseries.dir/all:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/depend
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pau/research/TDA-Timeseries/CMakeFiles --progress-num=1,2 "Built target TDA-Timeseries"
+.PHONY : CMakeFiles/TDA-Timeseries.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rips_persistence.dir/rule: cmake_check_build_system
+CMakeFiles/TDA-Timeseries.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pau/research/TDA-Timeseries/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rips_persistence.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TDA-Timeseries.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pau/research/TDA-Timeseries/CMakeFiles 0
-.PHONY : CMakeFiles/rips_persistence.dir/rule
+.PHONY : CMakeFiles/TDA-Timeseries.dir/rule
 
 # Convenience name for target.
-rips_persistence: CMakeFiles/rips_persistence.dir/rule
+TDA-Timeseries: CMakeFiles/TDA-Timeseries.dir/rule
 
-.PHONY : rips_persistence
+.PHONY : TDA-Timeseries
 
 # clean rule for target.
-CMakeFiles/rips_persistence.dir/clean:
-	$(MAKE) -f CMakeFiles/rips_persistence.dir/build.make CMakeFiles/rips_persistence.dir/clean
-.PHONY : CMakeFiles/rips_persistence.dir/clean
+CMakeFiles/TDA-Timeseries.dir/clean:
+	$(MAKE) -f CMakeFiles/TDA-Timeseries.dir/build.make CMakeFiles/TDA-Timeseries.dir/clean
+.PHONY : CMakeFiles/TDA-Timeseries.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
