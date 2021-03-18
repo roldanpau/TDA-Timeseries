@@ -47,9 +47,9 @@ int main(int argc, char* argv[]) {
   
   std::vector<Point> S;	// training set
   // Norm of landscape
-  for(i=0; i<timeseries.size()-win_size; i++) {
+  for(i=0; i<timeseries.size()-win_size+1; i++) {
 	  std::clog << "\nProcessing point "<< i << " out of " <<
-		  timeseries.size()-win_size-1 << std::endl;
+		  timeseries.size()-win_size << std::endl;
 
 	  std::vector<Point> point_cloud = 
 		  std::vector<Point>(timeseries.begin()+i, 
@@ -67,19 +67,22 @@ int main(int argc, char* argv[]) {
 	  p.push_back(norm);
 
 	  // Label (0 = negative return, 1 = non-negative return)
+	  /*
 	  if(timeseries[i+win_size].back() >= 0) 
 		  p.push_back(1.0);
 	  else
 		  p.push_back(0.0);
+		  */
 
 	  S.push_back(p);
   }
 
-  // Write training set S to file
-  std::ofstream outFile("training.txt");
+  // Write training set S to CSV file
+  std::ofstream outFile("data/TDA.csv");
+  outFile << "ret(t-2),ret(t-1),ret(t),norm,kk\n";
   for (const auto &p : S) {
 	  for (const auto x : p)
-		  outFile << x << " ";
+		  outFile << x << ",";
 	  outFile << "\n";
   }
 

@@ -43,8 +43,23 @@ int main(int argc, char* argv[]) {
   // Construct the Rips complex in a Simplex Tree
   Simplex_tree simplex_tree;
   rips_complex_from_file.create_complex(simplex_tree, dim_max);
-  std::clog << "\nThe complex contains " << simplex_tree.num_simplices() << " simplices \n";
-  std::clog << "   and has dimension " << simplex_tree.dimension() << " \n";
+
+  // ----------------------------------------------------------------------------
+  // Display information about the one skeleton Rips complex
+  // ----------------------------------------------------------------------------
+  std::clog << "Rips complex is of dimension " << simplex_tree.dimension() <<
+               " - " << simplex_tree.num_simplices() << " simplices - " <<
+               simplex_tree.num_vertices() << " vertices." << std::endl;
+  std::clog << "Iterator on Rips complex simplices in the filtration order, with [filtration value]:" <<
+               std::endl;
+  for (auto f_simplex : simplex_tree.filtration_simplex_range()) {
+    std::clog << "   ( ";
+    for (auto vertex : simplex_tree.simplex_vertex_range(f_simplex)) {
+      std::clog << vertex << " ";
+    }
+    std::clog << ") -> " << "[" << simplex_tree.filtration(f_simplex) << "] ";
+    std::clog << std::endl;
+  }
 
   // Compute the persistence diagram of the complex in degree 1
   Persistent_cohomology pcoh(simplex_tree);
@@ -93,9 +108,6 @@ int main(int argc, char* argv[]) {
   l.plot("landscape");
 
   return 0;
-}
-
-double norm_of_landscape(const std::vector<Point> &point_cloud) {
 }
 
 void program_options(int argc, char* argv[], std::string& off_file_points, std::string& filediag,

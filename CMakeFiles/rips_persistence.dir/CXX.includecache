@@ -310,7 +310,7 @@ utility
 tuple
 -
 
-/home/pau/research/TDA-Timeseries/TDA-Timeseries.cpp
+/home/pau/research/TDA-Timeseries/rips_persistence.cpp
 gudhi/Rips_complex.h
 -
 gudhi/distance_functions.h
